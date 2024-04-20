@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: true }))
 
 
 // routers
-const router = require('./routes/productRouter.js')
-app.use('/api/products', router)
+const productsRouter = require('./routes/productRouter.js')
+app.use('/api/products', productsRouter)
 
 //static Images Folder
 
